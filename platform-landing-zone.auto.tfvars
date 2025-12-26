@@ -18,7 +18,7 @@ Replacements are denoted by the dollar-dollar curly braces token (e.g. $${starte
 You can define the Azure regions to use throughout the configuration.
 The first location will be used as the primary location, the second as the secondary location, and so on.
 */
-starter_locations = ["japaneast", "japanwest"]
+starter_locations = ["japaneast"]
 
 /*
 --- Custom Replacements ---
@@ -52,29 +52,29 @@ custom_replacements = {
     dcr_vm_insights_name                    = "dcr-vm-insights"
 
     # Resource provisioning global connectivity
-    ddos_protection_plan_enabled = true
+    ddos_protection_plan_enabled = false
 
     # Resource provisioning primary connectivity
-    primary_firewall_enabled                                             = true
-    primary_firewall_management_ip_enabled                               = true
-    primary_virtual_network_gateway_express_route_enabled                = true
-    primary_virtual_network_gateway_express_route_hobo_public_ip_enabled = true
-    primary_virtual_network_gateway_vpn_enabled                          = true
-    primary_private_dns_zones_enabled                                    = true
-    primary_private_dns_auto_registration_zone_enabled                   = true
-    primary_private_dns_resolver_enabled                                 = true
-    primary_bastion_enabled                                              = true
+    primary_firewall_enabled                                             = false
+    primary_firewall_management_ip_enabled                               = false
+    primary_virtual_network_gateway_express_route_enabled                = false
+    primary_virtual_network_gateway_express_route_hobo_public_ip_enabled = false
+    primary_virtual_network_gateway_vpn_enabled                          = false
+    primary_private_dns_zones_enabled                                    = false
+    primary_private_dns_auto_registration_zone_enabled                   = false
+    primary_private_dns_resolver_enabled                                 = false
+    primary_bastion_enabled                                              = false
 
     # Resource provisioning secondary connectivity
-    secondary_firewall_enabled                                             = true
-    secondary_firewall_management_ip_enabled                               = true
-    secondary_virtual_network_gateway_express_route_enabled                = true
-    secondary_virtual_network_gateway_express_route_hobo_public_ip_enabled = true
-    secondary_virtual_network_gateway_vpn_enabled                          = true
-    secondary_private_dns_zones_enabled                                    = true
-    secondary_private_dns_auto_registration_zone_enabled                   = true
-    secondary_private_dns_resolver_enabled                                 = true
-    secondary_bastion_enabled                                              = true
+    secondary_firewall_enabled                                             = false
+    secondary_firewall_management_ip_enabled                               = false
+    secondary_virtual_network_gateway_express_route_enabled                = false
+    secondary_virtual_network_gateway_express_route_hobo_public_ip_enabled = false
+    secondary_virtual_network_gateway_vpn_enabled                          = false
+    secondary_private_dns_zones_enabled                                    = false
+    secondary_private_dns_auto_registration_zone_enabled                   = false
+    secondary_private_dns_resolver_enabled                                 = false
+    secondary_bastion_enabled                                              = false
 
     # Resource names primary connectivity
     primary_virtual_network_name                                 = "vnet-hub-$${starter_location_01}"
